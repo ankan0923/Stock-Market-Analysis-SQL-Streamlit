@@ -260,18 +260,21 @@ pip install pandas numpy plotly streamlit
 ### 2. Place the six CSV files
 
 ```text
-project/
+stock-market-analysis-sql-streamlit/
+│
 ├── main.py
 ├── analytics.py
 ├── visual.py
-├── data/
-│   ├── Bajaj Auto.csv
-│   ├── Eicher Motors.csv
-│   ├── Hero Motocorp.csv
-│   ├── Infosys.csv
-│   ├── TCS.csv
-│   └── TVS Motors.csv
-└── Pasted_text_lowercase.txt
+├── requirements.txt
+├── README.md
+│
+└── Raw File/
+    ├── Bajaj Auto.csv
+    ├── Eicher Motors.csv
+    ├── Hero Motocorp.csv
+    ├── Infosys.csv
+    ├── TCS.csv
+    └── TVS Motors.csv
 ```
 
 ### 3. Run the dashboard
