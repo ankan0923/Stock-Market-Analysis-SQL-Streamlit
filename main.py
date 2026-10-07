@@ -107,11 +107,14 @@ px.defaults.template='plotly_dark'
 
 @st.cache_data
 def get_data():
-    root=Path(__file__).parent
-    for folder in [root/'data',root]:
-        if all((folder/f'{name}.csv').exists() for name in STOCKS):
-            return load_prices(folder)
-    raise FileNotFoundError('Place all six original CSVs together in data/ or beside app.py')
+    root = Path(__file__).resolve().parent
+    folder = root / "Raw File"
+
+    if all((folder / f"{name}.csv").exists() for name in STOCKS):
+        return load_prices(folder)
+
+    raise FileNotFoundError(
+        "Could not find all required CSV files inside the 'Raw File' folder.")
 
 def chart(fig):
     fig.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='rgba(0,0,0,0)',
