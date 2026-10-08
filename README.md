@@ -16,6 +16,8 @@ The project combines relational SQL analysis, window functions, moving-average c
 
 The supplied student guide defines a structured SQL lab around moving averages and golden-cross signals. The completed SQL analysis extends that work to **22 analytical questions**, covering price behaviour, signals, corporate actions, data quality, turnover, volume, delivery activity, monthly returns, volatility, and signal reversals.
 
+**[Explore the live dashboard](https://mainpy-ydzfqinjhwp8vx3zd4taxi.streamlit.app/)**
+
 ## Business / Analytical Objectives
 
 1. Understand the historical structure of six stock datasets.
