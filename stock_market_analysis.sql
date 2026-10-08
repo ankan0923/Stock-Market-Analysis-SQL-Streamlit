@@ -200,8 +200,7 @@ with prices as (
         'infosys',
         str_to_date(`date`, '%d-%m-%y'),
         `close price`
-    from infosys
-),
+    from infosys),
 adjusted as (
     select
         stock_name,
@@ -218,8 +217,7 @@ adjusted as (
 
             else close_price
         end as adjusted_close
-    from prices
-),
+    from prices),
 endpoints as (
     select
         stock_name,
